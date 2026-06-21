@@ -2,12 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  LayoutDashboardIcon,
-  FolderGit2Icon,
-  SettingsIcon,
-  GitBranchIcon,
-} from "lucide-react";
+import { LayoutIcon, GitBranch, GitCommit, SettingsIcon } from "lucide-react";
 
 import {
   DASHBOARD_NAV_ITEMS,
@@ -23,9 +18,9 @@ import {
 } from "@/components/ui/sidebar";
 
 const NAV_ICONS = {
-  "layout-dashboard": LayoutDashboardIcon,
-  "folder-git-2": FolderGit2Icon,
-  github: GitBranchIcon,
+  "layout-dashboard": LayoutIcon,
+  "folder-git-2": GitBranch,
+  github: GitCommit,
   settings: SettingsIcon,
 } as const;
 
