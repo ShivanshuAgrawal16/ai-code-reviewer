@@ -27,5 +27,5 @@ export async function GET(request: NextRequest) {
     await saveInstallation(session.user.id, Number(installationId));
   }
 
-  return DASHBOARD_ROUTES.github;
+  redirect(DASHBOARD_ROUTES.github);
 }
